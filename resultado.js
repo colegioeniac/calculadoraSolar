@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     const potenciaSistema = localStorage.getItem("potenciaSistema") || 'Dados não disponíveis';
-    console.log('2',potenciaSistema)
 
     const quantidadePlacas = localStorage.getItem("quantidadePlacas") || 'Dados não disponíveis';
     const payback = localStorage.getItem("payback") || 'Dados não disponíveis';
