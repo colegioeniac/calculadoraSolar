@@ -15,131 +15,123 @@ html, body {
 }
 
 header {
-    text-align: center; /* Centraliza o cabeçalho */
-    position: absolute; /* Para sobreposição */
+    text-align: center;
+    position: absolute;
     top: 0;
-    right: 0; /* Alinhamento à direita */
-    z-index: 10; /* Para ficar acima da seção de destaque */
-    color: #4CAF50; /* Cor esverdeada para o cabeçalho */
-    padding: 10px; /* Espaçamento interno */
-    margin: 20px 40px; /* Margem externa */
+    right: 0; 
+    z-index: 10;
+    color: #4CAF50; 
+    padding: 10px; 
+    margin: 20px 40px;
 }
 
 nav ul {
-    list-style: none; /* Sem marcadores de lista */
-    padding: 0; /* Sem espaçamentos desnecessários */
+    list-style: none; 
+    padding: 0; 
     display: flex;
-    justify-content: center; /* Centraliza os itens no cabeçalho */
+    justify-content: center;
 }
 
 nav ul li {
-    margin-right: 15px; /* Espaçamento entre itens */
+    margin-right: 15px;
 }
 
 nav ul li a {
-    font-weight: 600; /* Fonte Poppins peso 600 */
-    color: white; /* Contraste para o fundo esverdeado */
+    font-weight: 600;
+    color: white;
     padding: 10px;
-    text-decoration: none; /* Sem sublinhado */
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: lightgray; /* Mudança de cor ao passar o mouse */
-}
-/* Estilo para a seção de destaque (Hero Section) */
-#inicio {
-    background-image: url('imgs/floresta-desmatada.png'); /* Imagem de fundo */
-    background-size: cover; /* Cobrir a área */
-    background-position: center; /* Centralizar a imagem */
-    background-repeat: no-repeat; /* Sem repetição */
-    height: 100vh; /* Cobrir a primeira dobra */
-    display: flex; /* Usar flexbox para posicionamento */
-    justify-content: flex-start; /* Alinha ao lado esquerdo */
-    align-items: center; /* Alinha ao centro verticalmente */
-    padding: 10px; /* Espaçamento interno */
+    color: lightgray;
 }
 
-/* Estilo para os textos na seção de destaque */
+#inicio {
+    background-image: url('imgs/floresta-desmatada.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 10px;
+}
+
 #inicio .textos {
-    text-align: left; /* Alinhar à esquerda */
+    text-align: left; 
     margin-left: 40px;
 }
 
 #inicio h1 {
-    font-size: 70px; /* Tamanho do título */
-    font-weight: bold; /* Negrito */
-    color: white; /* Cor do texto */
-    text-shadow: 4px 4px 12px #000; /* Sombra para contraste */
+    font-size: 70px; 
+    font-weight: bold; 
+    color: white; 
+    text-shadow: 4px 4px 12px #000; 
 }
 
 #inicio .subtitulos {
-    font-size: 20px; /* Tamanho do texto */
-    color: white; /* Cor do texto */
-    text-shadow: 3px 3px 10px #000; /* Sombra para contraste */
+    font-size: 20px; 
+    color: white; 
+    text-shadow: 3px 3px 10px #000; 
 }
 
-
-/* Estilo para o botão no canto inferior direito */
 #inicio .botao-direito {
-    position: absolute; /* Posição absoluta para controle preciso */
-    background-color: transparent; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 15px 30px; /* Tamanho do botão */
-    border: 2px solid #4CAF50; /* Sem bordas adicionais */
-    border-radius: 30px; /* Bordas arredondadas */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    transition: background-color 0.3s; /* Efeito para hover */
+    position: absolute;
+    background-color: transparent; 
+    color: white; 
+    padding: 15px 30px; 
+    border: 2px solid #4CAF50; 
+    border-radius: 30px; 
+    text-transform: uppercase; 
+    transition: background-color 0.3s; 
 }
 
-/* Efeito para hover no botão */
 #inicio .botao-direito:hover {
-    background-color: #45a049; /* Cor mais escura ao passar o mouse */
+    background-color: #45a049;
 }
 
-/* Estilos para o botão "Faça sua parte" */
 .botao-faca-sua-parte {
-    background-color: transparent; /* Cor verde para o botão */
-    color: white; /* Cor do texto */
-    padding: 15px 30px; /* Ajustar o tamanho do botão */
-    font-size: 16px; /* Tamanho do texto no botão */
-    border: 2px solid #4CAF50; /* Borda com cor verde */
-    border-radius: 30px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
-    text-transform: uppercase; /* Texto em maiúsculas para efeito */
-    transition: background-color 0.3s; /* Transição suave para hover */
+    background-color: transparent; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 16px; 
+    border: 2px solid #4CAF50; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    transition: background-color 0.3s; 
 }
 
-/* Efeito para hover (quando o mouse passa por cima) */
 .botao-faca-sua-parte:hover {
-    background-color: #45a0493f; /* Cor mais escura ao passar o mouse */
+    background-color: #45a0493f; 
 }
 
 #como-contribuir {
     margin: 25px;
 }
 
-/* Seções do Site (Limitar Largura, mas sem afetar #inicio) */
 section {
-    padding: 40px; /* Espaçamento para cada seção */
-    text-align: center; /* Centraliza o texto */
-    margin: auto; /* Centraliza na página */
+    padding: 40px; 
+    text-align: center; 
+    margin: auto; 
     min-height: 100vh;
 }
 
 #calculadora, #perguntas-frequentes, #energia-da-rua, #energia-solar {
-    max-width: 800px; /* Limitar largura apenas para seções que precisam */
-    margin: auto; /* Centraliza na página */
+    max-width: 800px; 
+    margin: auto; 
 }
 
-/* Estilo para perguntas frequentes com efeito de acordeão */
 .pergunta-frequente {
-    background-color: #f1f1f1; /* Fundo cinza claro */
-    border: 1px solid #ccc; /* Borda cinza */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
-    cursor: pointer; /* Indica clicável */
-    max-width: 800px; /* Limitar a largura para prevenir cortes */
-    margin: auto; /* Centraliza na página */
+    background-color: #f1f1f1; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 10px; 
+    cursor: pointer; 
+    max-width: 800px; 
+    margin: auto; 
 }
 
 .pergunta-frequente {
@@ -147,55 +139,53 @@ section {
 }
 
 .pergunta-frequente::after {
-    content: '▼'; /* Seta para baixo */
-    float: right; /* Alinha à direita */
+    content: '▼'; 
+    float: right; 
 }
 
 .pergunta-frequente.aberta::after {
-    content: '▲'; /* Seta para cima */
+    content: '▲'; 
 }
 
 .resposta {
-    display: none; /* Oculta a resposta */
-    padding: 10px; /* Espaçamento interno */
-    text-align: left; /* Alinha à esquerda */
-    max-width: 800px; /* Limita a largura */
-    margin: auto; /* Centraliza na página */
+    display: none; 
+    padding: 10px; 
+    text-align: left; 
+    max-width: 800px; 
+    margin: auto; 
 }
 
-/* Estilos para o Rodapé */
 footer {
-    background-color: white; /* Fundo neutro */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento no rodapé */
-    width: 100%; /* Garante largura total */
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
 }
 
 footer a {
-    color: #333; /* Cor dos links no rodapé */
+    color: #333;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
+    text-decoration: underline;
 }
 
-/* Estilo para a barra de rolagem em navegadores WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
-    width: 5px; /* Largura da barra de rolagem */
+    width: 5px; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 128, 0, 0.4); /* Cor verde com mais opacidade para o "polegar" */
-    border-radius: 4px; /* Bordas arredondadas */
-    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+    background-color: rgba(0, 128, 0, 0.4);
+    border-radius: 4px;
+    transition: background-color 0.3s; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 128, 0, 0.6); /* Cor mais escura ao passar o mouse */
+    background-color: rgba(0, 128, 0, 0.6); 
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(0, 128, 0, 0.05); /* Cor verde claro para o "trilho" com baixa opacidade */
-    border-radius: 4px; /* Bordas arredondadas */
+    background-color: rgba(0, 128, 0, 0.05);
+    border-radius: 4px;
 }
 
