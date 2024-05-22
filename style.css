@@ -1,0 +1,201 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+html, body {
+    width: 100%;
+}
+
+header {
+    text-align: center; /* Centraliza o cabeçalho */
+    position: absolute; /* Para sobreposição */
+    top: 0;
+    right: 0; /* Alinhamento à direita */
+    z-index: 10; /* Para ficar acima da seção de destaque */
+    color: #4CAF50; /* Cor esverdeada para o cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    margin: 20px 40px; /* Margem externa */
+}
+
+nav ul {
+    list-style: none; /* Sem marcadores de lista */
+    padding: 0; /* Sem espaçamentos desnecessários */
+    display: flex;
+    justify-content: center; /* Centraliza os itens no cabeçalho */
+}
+
+nav ul li {
+    margin-right: 15px; /* Espaçamento entre itens */
+}
+
+nav ul li a {
+    font-weight: 600; /* Fonte Poppins peso 600 */
+    color: white; /* Contraste para o fundo esverdeado */
+    padding: 10px;
+    text-decoration: none; /* Sem sublinhado */
+}
+
+nav ul li a:hover {
+    color: lightgray; /* Mudança de cor ao passar o mouse */
+}
+/* Estilo para a seção de destaque (Hero Section) */
+#inicio {
+    background-image: url('imgs/floresta-desmatada.png'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir a área */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Sem repetição */
+    height: 100vh; /* Cobrir a primeira dobra */
+    display: flex; /* Usar flexbox para posicionamento */
+    justify-content: flex-start; /* Alinha ao lado esquerdo */
+    align-items: center; /* Alinha ao centro verticalmente */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para os textos na seção de destaque */
+#inicio .textos {
+    text-align: left; /* Alinhar à esquerda */
+    margin-left: 40px;
+}
+
+#inicio h1 {
+    font-size: 70px; /* Tamanho do título */
+    font-weight: bold; /* Negrito */
+    color: white; /* Cor do texto */
+    text-shadow: 4px 4px 12px #000; /* Sombra para contraste */
+}
+
+#inicio .subtitulos {
+    font-size: 20px; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+    text-shadow: 3px 3px 10px #000; /* Sombra para contraste */
+}
+
+
+/* Estilo para o botão no canto inferior direito */
+#inicio .botao-direito {
+    position: absolute; /* Posição absoluta para controle preciso */
+    background-color: transparent; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 15px 30px; /* Tamanho do botão */
+    border: 2px solid #4CAF50; /* Sem bordas adicionais */
+    border-radius: 30px; /* Bordas arredondadas */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    transition: background-color 0.3s; /* Efeito para hover */
+}
+
+/* Efeito para hover no botão */
+#inicio .botao-direito:hover {
+    background-color: #45a049; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos para o botão "Faça sua parte" */
+.botao-faca-sua-parte {
+    background-color: transparent; /* Cor verde para o botão */
+    color: white; /* Cor do texto */
+    padding: 15px 30px; /* Ajustar o tamanho do botão */
+    font-size: 16px; /* Tamanho do texto no botão */
+    border: 2px solid #4CAF50; /* Borda com cor verde */
+    border-radius: 30px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    text-transform: uppercase; /* Texto em maiúsculas para efeito */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+/* Efeito para hover (quando o mouse passa por cima) */
+.botao-faca-sua-parte:hover {
+    background-color: #45a0493f; /* Cor mais escura ao passar o mouse */
+}
+
+#como-contribuir {
+    margin: 25px;
+}
+
+/* Seções do Site (Limitar Largura, mas sem afetar #inicio) */
+section {
+    padding: 40px; /* Espaçamento para cada seção */
+    text-align: center; /* Centraliza o texto */
+    margin: auto; /* Centraliza na página */
+    min-height: 100vh;
+}
+
+#calculadora, #perguntas-frequentes, #energia-da-rua, #energia-solar {
+    max-width: 800px; /* Limitar largura apenas para seções que precisam */
+    margin: auto; /* Centraliza na página */
+}
+
+/* Estilo para perguntas frequentes com efeito de acordeão */
+.pergunta-frequente {
+    background-color: #f1f1f1; /* Fundo cinza claro */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer; /* Indica clicável */
+    max-width: 800px; /* Limitar a largura para prevenir cortes */
+    margin: auto; /* Centraliza na página */
+}
+
+.pergunta-frequente {
+    margin: 10px
+}
+
+.pergunta-frequente::after {
+    content: '▼'; /* Seta para baixo */
+    float: right; /* Alinha à direita */
+}
+
+.pergunta-frequente.aberta::after {
+    content: '▲'; /* Seta para cima */
+}
+
+.resposta {
+    display: none; /* Oculta a resposta */
+    padding: 10px; /* Espaçamento interno */
+    text-align: left; /* Alinha à esquerda */
+    max-width: 800px; /* Limita a largura */
+    margin: auto; /* Centraliza na página */
+}
+
+/* Estilos para o Rodapé */
+footer {
+    background-color: white; /* Fundo neutro */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento no rodapé */
+    width: 100%; /* Garante largura total */
+}
+
+footer a {
+    color: #333; /* Cor dos links no rodapé */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilo para a barra de rolagem em navegadores WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 128, 0, 0.4); /* Cor verde com mais opacidade para o "polegar" */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 128, 0, 0.6); /* Cor mais escura ao passar o mouse */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 128, 0, 0.05); /* Cor verde claro para o "trilho" com baixa opacidade */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+

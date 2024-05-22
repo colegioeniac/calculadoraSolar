@@ -1,0 +1,11 @@
+{
+  "São Paulo": {
+    "mediaIrradiacaoSolar": 4.43
+  },
+  "Guarulhos": {
+    "mediaIrradiacaoSolar": 4.43,
+    "mediaTemperaturaAnual": 18.8
+  }
+}
+
+  

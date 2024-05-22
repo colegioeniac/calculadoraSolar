@@ -1,0 +1,48 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.top-texto{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 50px;
+}
+
+.data-block {
+    background: #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.data-block strong {
+    display: block;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

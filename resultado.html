@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resultados do Cálculo Solar</title>
+        <link rel="stylesheet" href="style-resultado.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script type="module" src="resultado.js"></script>
+    </head>
+    <body>
+        <div class="top-texto">
+            <div>
+                <h3>Informações da Placa Fotovoltaica</h3>
+                <p>Potência: 550Wp<br>Tipo de Tecnologia dos Painéis: Célula monocristalina<br></p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="data-block" data-tippy-content="Potência do sistema em kilowatt-pico (kWp).">
+                <span>Potência do Sistema</span>
+                <strong id="potenciaSistema"> kWp</strong>
+            </div>
+
+            <div class="data-block" data-tippy-content="Número de módulos fotovoltaicos.">
+                <span>Quantidade de Módulos</span>
+                <strong id="quantidadePlacas">13</strong>
+            </div>
+            <div class="data-block" data-tippy-content="Área necessária para instalar o sistema.">
+                <span>Área Necessária</span>
+                <strong id="areaInstalacao">14.9 m²</strong>
+            </div>
+            <div class="data-block" data-tippy-content="Redução estimada de emissões de CO2 em um ano.">
+                <span>Redução de CO2</span>
+                <strong id="reducaoCO2">1 Ton</strong>
+            </div>
+            <div class="data-block" data-tippy-content="Número de árvores equivalentes à redução de CO2 em um ano.">
+                <span>Árvores</span>
+                <strong id="arvores">50</strong>
+            </div>
+            <div class="data-block" data-tippy-content="Tempo estimado para retorno do investimento.">
+                <span>Payback Estimado</span>
+                <strong id="payback">1 ano</strong>
+            </div>
+            <div class="data-block" data-tippy-content="Custo médio estimado do investimento.">
+                <span>Investimento Medio</span>
+                <strong id="investimentoMedio">300</strong>
+            </div>
+            <div class="data-block" data-tippy-content="Produção mensal estimada de energia.">
+                <span>Produção Mensal Estimada</span>
+                <strong id="energiaGerada"></strong>
+            </div>
+
+        </div>
+        <button class="cta-button" onclick="redirectCLCSolar()">Solicite um Orçamento</button>
+        <button onclick="window.history.back()" class="button">Voltar</button>
+
+        
+</body>
+<script>
+    function redirectCLCSolar() {
+        window.location.replace("https://www.clcsolar.com.br")
+    }
+</script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('.data-block', {
+            theme: 'light',
+            duration: [500, 0], // Customize animation duration
+            arrow: true,       // Enable arrow on tooltip
+            animation: 'shift-away', // Tooltip animation
+        });
+    </script>
+<style>
+    .cta-button {
+        padding: 10px 30px;
+        background-color: transparent; /* Fundo claro */
+        color: #fff; /* Texto em cinza para contraste */
+        border: 2px solid #4CAF50; /* Borda cinza */
+        border-radius: 20px; /* Cantos arredondados */
+        font-size: 16px;
+        cursor: pointer;
+        position: fixed; /* Posicionamento fixo na tela */
+        bottom: 100px; /* Distância de 20px do fundo da tela */
+        left: 50%; /* Centralizado horizontalmente */
+        transform: translateX(-50%); /* Ajuste fino para centralização exata */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Sombra suave para profundidade */
+        transition: background-color 0.3s ease;
+        outline: none; /* Remove o contorno ao focar */
+        width: 250px; /* Definir uma largura específica */
+        text-align: center; /* Garantir o alinhamento do texto no centro */
+    }
+    .button {
+        padding: 10px 30px;
+        background-color: transparent; /* Fundo claro */
+        color: #fff; /* Texto em cinza para contraste */
+        border: 2px solid #4CAF50; /* Borda cinza */
+        border-radius: 20px; /* Cantos arredondados */
+        font-size: 16px;
+        cursor: pointer;
+        position: fixed; /* Posicionamento fixo na tela */
+        bottom: 50px; /* Distância de 20px do fundo da tela */
+        left: 50%; /* Centralizado horizontalmente */
+        transform: translateX(-50%); /* Ajuste fino para centralização exata */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Sombra suave para profundidade */
+        transition: background-color 0.3s ease;
+        outline: none; /* Remove o contorno ao focar */
+        width: 200px; /* Definir uma largura específica */
+        text-align: center; /* Garantir o alinhamento do texto no centro */
+    }
+
+    .button:hover {
+        background-color: #45a049; /* Um pouco mais escuro no hover */
+    }
+
+</style>
+</html>

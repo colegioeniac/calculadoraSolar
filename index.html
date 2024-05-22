@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Salve as Florestas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="calculadora.js"></script> 
+    <link rel="shortcut icon" href="imgs/shorticon.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header style="text-align: center;">
+        <div class="container">
+            <nav>
+                <ul style="display: flex; justify-content: center;">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#calculadora">Calculadora de Energia Solar</a></li>
+                    <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div class="textos">
+            <h1>Salve as Florestas</h1>
+            <p class="subtitulos">Esse é o resultado do uso de energias não renováveis: consequências irreversíveis para nossos ecossistemas.</p>
+            <button class="botao-direito" onclick="window.location.href='#calculadora'">Faça sua parte</button>
+        </div>
+
+        <div class="form-calc" id="calculadora">
+            <form id="form-calculadora" style="max-width: 400px; margin: auto; text-align: center;">
+                <p class="form-calc-titulo">Calculadora Solar</p>
+                <p class="form-calc-subtitulo">Utilize esta calculadora e descubra o investimento necessário para adotar energia solar em sua casa, contribuindo diretamente para a preservação dos biomas.</p>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="localizacao">Cidade:</label>
+                    <select class="localizacao" id="localizacao-desktop" name="localizacao" style="width: 80%;">
+                        <option value="">Selecione uma cidade</option>
+                        <option value="Guarulhos">Guarulhos</option>
+                    </select>
+                </div>
+    
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="consumoMedioMensal">Consumo Médio Mensal (kWh):</label>
+                    <input type="number" class="consumoMedioMensal" id="consumoMedioMensal-desktop" placeholder="Ex: 270" style="width: 80%;">
+                </div>
+    
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="custo-kwh">Valor kWh de sua cidade (R$):</label>
+                    <input type="number" class="custo-kwh" id="custo-kwh-desktop" placeholder="Digite o custo por kWh" style="width: 80%;">
+                </div>
+
+                <!-- <div class="form-group" style="margin-bottom: 20px;">
+                    <label for="email">Email:</label>
+                    <input type="email" class="email" id="email-desktop" placeholder="Digite o seu melhor email" style="width: 80%;">
+                </div> -->
+    
+    
+                <button id="botao-desktop" type="button">CALCULAR</button> 
+            </form>
+        </div>
+    </section>
+
+    <div class="form-calc-mobile">
+        <form id="form-calculadora" style="max-width: 400px; margin: auto; text-align: center;">
+            <p class="form-calc-titulo">Calculadora Solar</p>
+            <p class="form-calc-subtitulo">Utilize esta calculadora e descubra o investimento necessário para adotar energia solar em sua casa, contribuindo diretamente para a preservação dos biomas.</p>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label for="localizacao">Cidade:</label>
+                <select class="localizacao" id="localizacao-mobile" name="localizacao" style="width: 80%;">
+                    <option value="">Selecione uma cidade</option>
+                    <option value="Guarulhos">Guarulhos</option>
+                </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label for="consumoMedioMensal">Consumo Médio Mensal (kWh):</label>
+                <input type="number" class="consumoMedioMensal" id="consumoMedioMensal-mobile" placeholder="Ex: 270" style="width: 80%;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label for="custo-kwh">Valor kWh de sua cidade (R$):</label>
+                <input type="number" class="custo-kwh" id="custo-kwh-mobile" placeholder="Digite o custo por kWh" style="width: 80%;">
+            </div>
+            
+            <!-- <div class="form-group" style="margin-bottom: 20px;">
+                <label for="email">Email:</label>
+                <input type="email" class="email" id="email-mobile" placeholder="Digite o seu melhor email" style="width: 80%;">
+            </div> -->
+
+
+            <button id="botao-mobile" type="button">CALCULAR</button> 
+        </form>
+    </div>
+
+    <section id="como-contribuir" style="text-align: center;">
+        <div class="conteudo">
+            <div class="imagem">
+                <img src="imgs/casa.webp" alt="Floresta Limpa">
+            </div>
+            <div class="texto">
+
+                <h1>Impacto das Energias Não Renováveis nos Biomas Brasileiros</h1>
+                <p>As energias não renováveis, como petróleo, carvão e gás natural, têm efeitos significativamente prejudiciais aos biomas brasileiros. A exploração desses recursos frequentemente leva à degradação ambiental, como desmatamento e contaminação de solos e rios. Por exemplo, na Amazônia, a exploração de petróleo e gás pode resultar em vazamentos que afetam diretamente a biodiversidade local e comprometem os ecossistemas delicados da região. Além disso, a mineração de carvão no sul do Brasil causa devastação de áreas extensas, afetando a fauna e a flora e desestabilizando os ecossistemas locais.</p>
+
+                <h1>Benefícios da Energia Solar para os biomas brasileiros </h1>
+                <p>Em contrapartida, a energia solar surge como uma alternativa sustentável e benéfica para o meio ambiente e os biomas brasileiros. Sendo uma fonte limpa e inesgotável, a energia solar não emite poluentes nem gases de efeito estufa durante sua geração, o que contribui para a redução do impacto ambiental e para o combate às mudanças climáticas. No Brasil, com sua abundância de radiação solar, o potencial para a geração de energia solar é enorme. A adoção dessa tecnologia pode ajudar na conservação dos biomas, como a Mata Atlântica e o Cerrado, reduzindo a necessidade de exploração de fontes não renováveis e promovendo um desenvolvimento mais harmonioso e sustentável.</p>
+                
+                <h1>Como posso contribuir? </h1>
+                <p>Em contrapartida, a energia solar surge como uma alternativa sustentável e benéfica para o meio ambiente e os biomas brasileiros. Sendo uma fonte limpa e inesgotável, a energia solar não emite poluentes nem gases de efeito estufa durante sua geração, o que contribui para a redução do impacto ambiental e para o combate às mudanças climáticas. No Brasil, com sua abundância de radiação solar, o potencial para a geração de energia solar é enorme. A adoção dessa tecnologia pode ajudar na conservação dos biomas, como a Mata Atlântica e o Cerrado, reduzindo a necessidade de exploração de fontes não renováveis e promovendo um desenvolvimento mais harmonioso e sustentável.</p>
+
+                <button onclick="window.location.href='#calculadora'" href="windo" style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border: none; cursor: pointer; border-radius: 8px; transition: background-color 0.3s, transform 0.3s;">Como Contribuir</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="perguntas-frequentes">
+        <div class="container" style="text-align: center;">
+            <h2>Perguntas Frequentes</h2>
+            <div class="pergunta-frequente">O que é a Calculadora Solar?</div>
+            <div class="resposta">É uma ferramenta online indispensável para quem tem interesse em gerar a sua própria energia solar. Com ela é possível simular em poucos segundos o tamanho e o custo do gerador de energia solar ideal para suprir os gastos de luz de sua residência.</div>
+            <div class="pergunta-frequente">O que a Energia Solar ajuda nos biomas?</div>
+            <div class="resposta">A energia solar contribui para a proteção dos biomas ao reduzir as emissões de CO2, minimizar a poluição, economizar recursos naturais, e diminuir a necessidade de desmatamento para geração de energia. Além disso, ao não depender de água para sua produção, não exerce pressão sobre esse recurso vital, beneficiando ecossistemas especialmente em regiões áridas.</div>
+            <div class="pergunta-frequente">Como funciona a Calculadora?</div>
+            <div class="resposta">Através das informações referente a localização e o valor da conta de luz a ferramenta realizará cálculos utilizando-se de bancos de dados para simular as principais informações sobre o gerador de energia solar mais adequado a sua demanda de consumo. Desta forma, você vai saber em poucos segundos qual será a potência ideal a ser instalada em kWp, além do valor estimado a ser investido e o retorno desse investimento. Lembrando que a potência do gerador está baseada em uma simulação e por essa razão pode sofrer variações de acordo com a orientação e inclinação dos painéis, local de instalação e radiação para a região informada. Vale também informar que essa simulação não inclui serviços de engenharia e instalação.</div>
+            <div class="pergunta-frequente">Precisa de baterias?</div>
+            <div class="resposta">Para sistemas de energia solar conectados à rede, não é necessário ter baterias, pois a energia excedente pode ser enviada de volta à rede elétrica.</div>
+            <div class="pergunta-frequente">Tem garantia?</div>
+            <div class="resposta">Sim, nossas placas de energia solar têm uma garantia de 25 anos. Essa extensa garantia assegura sua tranquilidade, garantindo a qualidade e a eficiência duradoura do produto.</div>
+            <div class="pergunta-frequente">Eu posso ligar somente o meu ar-condicionado ou geladeira com energia solar?</div>
+            <div class="resposta">Tecnicamente, não. O sistema de energia solar é conectado no quadro de luz do imóvel e a energia que o painel produz é distribuída por toda a sua casa, alimentando tudo o que estiver conectado na tomada. No entanto, é possível dimensionar o seu sistema de modo que ele produza apenas a quantidade de energia que é consumida pelos aparelhos de ar-condicionado. </div>
+            <div class="pergunta-frequente">Como o sistema de energia solar funciona a noite?</div>
+            <div class="resposta">O sistema de energia solar funciona à noite através do uso de créditos energéticos acumulados durante o dia, permitindo uma economia de até 95% na conta de luz. Durante o dia, qualquer excesso de energia gerado pelos painéis solares é injetado na rede elétrica, convertendo-se em créditos. À noite, quando os painéis não produzem energia, esses créditos são utilizados para compensar o consumo de energia da rede, resultando em uma redução significativa nos custos de energia.</div>
+            <div class="pergunta-frequente">Se acabar a luz da rua o meu sistema de energia solar continua funcionando?</div>
+            <div class="resposta">Para sistemas fotovoltaicos conectados à rede (on grid), a resposta é não. Quando há uma queda de energia, o sistema possui um mecanismo de proteção chamado anti-ilhamento. Esse mecanismo desliga o sistema solar para evitar acidentes ou danos, aguardando o restabelecimento da energia da rede para retomar a operação.</div>
+            <div class="pergunta-frequente">Vocês recomenda alguma Empresa para obter mais informações?</div>
+            <div class="resposta">Sim, temos como parceiro a empresa CLC SOLAR onde é possivel você entender mais como funciona e também realizar a compra do sistema.</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Empresa Parceira</h2>
+            <img src="https://clcsolar.com.br/wp-content/uploads/2022/10/clc-solar.png" alt="Logo CLC Solar">
+            <p>&copy; 2024 Salve as Florestas. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Lucas Rezende, Rafael Françoso e Marjory Arantes</p>
+        </div>
+    </footer>
+</body>
+<style>
+
+#como-contribuir {
+    margin-bottom: 50px;
+}
+
+#perguntas-frequentes {
+    margin-top: 50px;
+}
+.conteudo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    background: #354a8f29;
+    border-radius: 10px;
+}
+
+.imagem {
+    flex: 1; 
+    max-width: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column; 
+    }
+
+    #como-contribuir {
+        padding: 20px;
+    }
+
+    #como-contribuir .texto {
+        font-size: 18px; 
+        margin: 10px 2px; 
+        padding: 10px;   
+        line-height: 1.6; 
+    }
+
+    .imagem, .texto {
+        max-width: 100%;
+    }
+
+    #perguntas-frequentes {
+        margin-top: 100px;
+    }
+
+    #como-contribuir, #perguntas-frequentes {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #como-contribuir {
+        padding-bottom: 20px;
+    }
+
+    #perguntas-frequentes {
+        padding-top: 10px; 
+    }
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+    #calculadora {
+    text-align: center;
+    padding: 60px;
+}
+
+.form-calc {
+        max-width: 700px;
+        max-height: 700px;
+        margin: auto; 
+        padding: 20px; 
+        background-color: #F4F4F4;
+        border-radius: 10px; 
+    }
+
+.form-calc-titulo {
+    color: black;
+    font-size: 28px; 
+    font-weight: bold; 
+    margin: 0;
+}
+
+.form-calc-subtitulo {
+    font-size: 14px;
+}
+
+
+.imagem-direita {
+    max-width: 500px; 
+    height: 500px;
+}
+
+@media (min-width: 769px) {
+    .botao-direito {
+        display: none;
+    }
+
+    .form-calc {
+       display: block;
+    }
+
+    .form-calc-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1110px) {
+    .botao-direito {
+        display: block;
+    }
+    #inicio h1 {
+        font-size: 50px;
+    }
+
+    #inicio .subtitulos {
+        font-size: 15px;
+    }
+
+    .form-calc {
+       display: none;
+    }
+
+    .form-calc-mobile {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .form-calculadora, .localizacao, .consumoMedioMensal, .custo-kwh {
+        width: 100%; 
+    }
+}
+
+
+
+
+.form-calc {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.form-calc-titulo, .form-calc-subtitulo {
+    text-align: center; 
+    color: #333; 
+}
+
+.form-group label {
+    position: relative; 
+    padding-left: 32px;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none; 
+    transition: border-color 0.3s; 
+}
+
+/* Estilo quando o campo está focado */
+.form-group input:focus, .form-group select:focus {
+    border-color: #90EE90; /* Verde claro */
+    outline: none; /* Confirma que a borda de foco é removida */
+}
+
+#botao-desktop, #botao-mobile {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 80px; /* Padding mais generoso para um melhor clique */
+    background: linear-gradient(45deg, #82ff5f, #00ffb3) border-box;
+    border-radius: 15px; /* Bordas altamente arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    border: none
+}
+
+#botao-desktop:hover, #botao-mobile:hover {
+    background-color: #e0ffe0; /* Muda para um verde claro ao passar o mouse */
+}
+</style>
+</html>
