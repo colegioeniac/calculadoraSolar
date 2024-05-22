@@ -4,8 +4,8 @@ import OpenMeteo from './mediaIrradianciaMensal.js';
 
 const painel500w = new PainelSolar("Canadian Risen 500w",500, 51.23, 42.88, 11.74, 12.53, -0.28, -0.36, 0.05, 44, 2.22, 1.10, 2.40, 2.4);
 
-const paineis = [painel270w, painel330w, painel325w,painel500w];
-const painel = paineis[3]
+const paineis = [painel500w];
+const painel = paineis[0]
 
 document.addEventListener('DOMContentLoaded', () => {
 
